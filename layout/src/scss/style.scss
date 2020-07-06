@@ -1,0 +1,22 @@
+$cor-1: #2F3E46;
+$cor-2: #ff6b35;
+$cor-3: #1d4e89;
+$cor-4: #1d1d1d;
+$cor-5: #CAD2C5;
+$cor-6: #941b0c;
+
+$theme-colors:(
+    "cor-1": $cor-1,
+    "cor-2": $cor-2,
+    "cor-3": $cor-3,
+    "cor-4": $cor-4,
+    "cor-5": $cor-5,
+    "cor-6": $cor-6
+
+);
+
+$body-bg: $cor-5;
+$link-color: $cor-2;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
