@@ -18,5 +18,15 @@ $theme-colors:(
 $body-bg: $cor-5;
 $link-color: $cor-2;
 
+/*deixa as classes dos posts responsivas*/
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail{
+    max-width: 100%;
+    height: auto;
+}
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
