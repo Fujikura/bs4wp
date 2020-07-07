@@ -68,4 +68,36 @@ if( !function_exists('bs4wp_registra_menu') ){
     add_action('after_setup_theme', 'bs4wp_registra_menu');
 }
 
+if(function_exists('add_theme_support')){
+
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(1280,720, true);
+
+}
+
+if(function_exists('add_filter')){
+
+    add_filter('excerpt_length', function($length){
+        return 50;
+    });
+}
+
+//paginação
+
+
+if(function_exists('add_filter')){
+    add_filter('next_posts_link_attributes', 'post_link_atributos');
+    add_filter('previous_posts_link_attributes', 'post_link_atributos');
+}
+
+if(!function_exists('post_link_atributos')){
+    function post_link_atributos()
+    {
+        return 'class="btn btn-outline-cor-3"';
+    }
+}
+
+
+
+
 ?>
